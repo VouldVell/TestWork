@@ -1,5 +1,6 @@
 ﻿using System;
 using Photon.Pun;
+using UnityEngine;
 
 namespace Code.UI_System
 {
@@ -19,7 +20,10 @@ namespace Code.UI_System
         public void Victory(PhotonView view)
         {
             _panel.VictoryPanel.gameObject.SetActive(true);
-            _panel.Managment.gameObject.SetActive(false);
+            foreach (var panel in _panel.Managment)
+            {
+                panel.SetActive(false);
+            }
             _panel.VictoryPaneCountCoins.text = $"collected coin: {_panel.CoinInfo.CurrentCoinsAmount.ToString()}";
             _panel.VictoryPanePlayerName.text = $"{view.Owner.NickName}: You Winner";
         }

@@ -10,7 +10,7 @@ namespace Code.UI_System
     public class UIPanel : MonoBehaviour
     {
         [Header("Objects")]
-        public GameObject Managment;
+        public GameObject[] Managment;
         public GameObject VictoryPanel;
         public TMP_Text VictoryPaneCountCoins;
         public TMP_Text VictoryPanePlayerName;
