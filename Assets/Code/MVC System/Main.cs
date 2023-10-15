@@ -1,9 +1,6 @@
-using Code.CoinSystem;
 using Code.UI_System;
 using Configs;
-using PlayerManagement;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Main : MonoBehaviour
 {

@@ -16,6 +16,5 @@ MonoBehaviour:
   <MinPlayers>k__BackingField: 2
   <Health>k__BackingField: 100
   <Damage>k__BackingField: 10
-  <CountCoins>k__BackingField: 6
-  <BulletSpeed>k__BackingField: 50
   <PlayerSpeed>k__BackingField: 5
+  <BulletSpeed>k__BackingField: 50

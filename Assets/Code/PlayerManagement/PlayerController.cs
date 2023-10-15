@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using Code.CoinSystem;
+﻿using Code.CoinSystem;
 using Code.UI_System;
 using Configs;
 using UnityEngine;
-using UnityEngine.UI;
 using Photon.Pun;
 using Unity.Mathematics;
-using Unity.VisualScripting;
 using Random = UnityEngine.Random;
 
 namespace PlayerManagement
@@ -24,7 +21,6 @@ namespace PlayerManagement
 
         private Quaternion _rotation;
         private int _damage = 10;
-        private bool _isDead = false;
         
         private Player _player;
         private BulletView _bullet;
@@ -75,8 +71,6 @@ namespace PlayerManagement
             player.Health = _gameConfig.Health;
             player.speed = _gameConfig.PlayerSpeed;
             player.spriteRenderer.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
-            
-            _panel.AddPlayer(player);
             _panel.Fire.onClick.AddListener(Fire);
             
             player.OnTriggerBullet += Damage;
@@ -135,11 +129,15 @@ namespace PlayerManagement
         {
             if (_enabled)
             {
-                Move();
+                
                 if (PhotonNetwork.PlayerList.Length == 1)
                 {
                     _uiController.Victory(_player.photonView);
                     _enabled = false;
+                }
+                else
+                {
+                    Move();
                 }
             }
             

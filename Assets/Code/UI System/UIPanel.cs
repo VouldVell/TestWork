@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Code.CoinSystem;
+﻿using Code.CoinSystem;
 using PlayerManagement;
 using TMPro;
 using UnityEngine;
@@ -21,19 +20,5 @@ namespace Code.UI_System
         public VariableJoystick JoyStick;
         public CoinInfo CoinInfo;
         public HealthBar healthBar;
-        [Space]
-        [SerializeField]private List<Player> _players = new ();
-        
-        public void AddPlayer(Player player)
-        {
-            _players.Add(player);
-            Debug.Log(_players.Count);
-        }
-        
-        public void RemovePlayer(Player player)
-        {
-            _players.Remove(player);
-            Debug.Log(_players.Count);
-        }
     }
 }
