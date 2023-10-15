@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59aecc70856546ca96e5c958271b413a, type: 3}
+  m_Name: ObjectsHolder
+  m_EditorClassIdentifier: 
+  <Player>k__BackingField: {fileID: 1208144871472054, guid: bc2aca0f882f5524a811707c726c3d0c, type: 3}
+  <Bullet>k__BackingField: {fileID: 8369079700915161035, guid: e428a2c15f0949044a83a98f9ca01ab4, type: 3}
+  <Coin>k__BackingField: {fileID: 5593591172329551135, guid: b93282d0c8ac4a24d9249d5886867f4d, type: 3}
