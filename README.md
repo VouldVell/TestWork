@@ -1,3 +1,7 @@
+Забыл добавить ссылку на FigJam поэтому она сдесь:
+https://www.figma.com/file/LrHAGIswmK24b4X2PE60R0/Untitled?type=whiteboard&node-id=0%3A1&t=Ys0fEyZzTF0WlNPo-1
+
+
 Что было сделано:
 1. Счена подключения к серверу
 2. проверка на наличие комнаты с обеих сторон
